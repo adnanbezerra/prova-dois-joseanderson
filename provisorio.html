@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 30 — Build 30 things with vanilla JS in 30 days with 30 tutorials</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="/images/favion-JS3.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="hero">
+        <h1>
+            <a href="https://javascript30.com/" class="hero_title">
+                <span class="hashtag">#</span>
+                <span>JavaScript</span>
+                <span class="num">30</span>
+            </a>
+        </h1>
+        <p class="hero_text hero__text--small">
+            <span class="hl">30</span>
+            Day vanilla
+            <span class="hl">JS</span>
+            Coding Challenge
+        </p>
+        <p class="hero_text hero__text--small">
+            Build
+            <span class="hl">30</span>
+            things in
+            <span class="hl">30</span>
+            days with
+            <span class="hl">30</span>
+            tutorials
+        </p>
+        <p class="hero_text hero__text--small">
+            <span class="hl">No</span>
+            frameworks
+            <span class="x-up-or-get-out">x</span>
+            <span class="hl">No</span>
+
+            compilers <span class="x-up-or-get-out">x</span>
+
+            <span class="hl">No</span>
+            libraries <span class="x-up-or-get-out">x</span>
+
+            <span class="hl">No</span>
+
+            boilerplate
+        </p>
+
+        <a href="/account.html" class="button button-login">My Account -></a>
+    </header>
+
+    <section class="section">
+        <div class="section__inner">
+            <div class="signup">
+                <div class="signup__step signup__step--1">
+                    <div class="signup__section signup__section--price">
+                        <div class="price"><span class="price__value--currency">$</span><span
+                                class="price__value--dollars">0</span><span class="price__value--cents">00</span>
+                        </div><strong>FREE</strong>
+                    </div>
+                    <div class="signup__section signup__section--email">
+                        <h3>Start The Challenge Today!</h3>
+                        <p class="error-display" style="display:none;"></p>
+                        <form class="capture" name="capture" method="post" action="/api/customer/">
+                            <div class="g-recaptcha" id="recaptcha"
+                                data-sitekey="6LdL7xgUAAAAACHVOa9hc4c248aYnitx7DP6ybRr" data-size="invisible"
+                                data-callback="handleSignup">
+                                <div class="grecaptcha-badge" data-style="bottomright"
+                                    style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
+                                    <div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60"
+                                            role="presentation" name="a-wnqsjvwcsvh7" frameborder="0" scrolling="no"
+                                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                                            src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdL7xgUAAAAACHVOa9hc4c248aYnitx7DP6ybRr&amp;co=aHR0cHM6Ly9qYXZhc2NyaXB0MzAuY29tOjQ0Mw..&amp;hl=en&amp;v=rz4DvU-cY2JYCwHSTck0_qm-&amp;size=invisible&amp;cb=mhcxphxs80vi"></iframe>
+                                    </div>
+                                    <div class="grecaptcha-error"></div><textarea id="g-recaptcha-response"
+                                        name="g-recaptcha-response" class="g-recaptcha-response"
+                                        style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                </div><iframe style="display: none;"></iframe>
+                            </div>
+                            <div class="input-wrap"><input class="capture__input" type="email" name="email" id="email"
+                                    required="" placeholder="Email Address"><input type="hidden" name="product"
+                                    value="JS31"><input class="capture__input capture__input--submit" type="submit"
+                                    value="Join 656,844 Others"></div>
+                            <fieldset><label class="terms" for="terms"><input name="terms" id="terms" type="checkbox"
+                                        required=""><span>I agree to the <a href="https://wesbos.com/terms"
+                                            target="_blank">Terms</a> and <a href="https://wesbos.com/privacy"
+                                            target="_blank">Privacy
+                                            Policy</a></span></label></fieldset>
+                        </form>
+                        <p>Sign up to get immediate access to the course dashboard</p>
+                        <p>You'll get all 30 days at once so you can binge watch <span class="highlight">Netflix
+                                style</span>.</p>
+                    </div>
+                    <div class="signup__section signup__section--info">
+                        <ul class="list">
+                            <li class="list__item--bold">What You'll Get</li>
+                            <li class="list__item">Instant Access to all 30 videos</li>
+                            <li class="list__item">30 days of Starter Files</li>
+                            <li class="list__item">Completed HTML, CSS and JS Solutions for each day</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="signup__step signup__step--2">
+                    <div>
+                        <p>👌 Almost Done — you'll get a confirmation email any minute now.</p>
+                        <h3>Make it happen - commit to #JavaScript30 publicly</h3>
+                        <p>This isn't going to be another course you sign up for and never do.<br>Let's see this one
+                            through. Commit to it publicly and invite some friends to join you.</p>
+                    </div>
+                    <div class="share">
+                        <div class="share__option"><a class="twitter-share-button" target="_blank"
+                                href="https://twitter.com/share" data-size="large"
+                                data-text="I'm taking the 30 day JavaScript Challenge with @WesBos. Join me →"
+                                data-url="https://JavaScript30.com" data-hashtags="JavaScript30"
+                                data-related="wesbos">Tweet</a></div>
+                        <div class="share__option"><a target="_blank"
+                                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2FJavaScript30.com%2F">Share
+                                on Facebook</a></div>
+                        <div class="share__option"><a target="_blank" href="https://facebook.com/wesbos.developer">Like
+                                Wes Bos</a></div>
+                        <div class="share__option"><a class="twitter-follow-button" target="_blank"
+                                href="https://twitter.com/wesbos" data-size="large">Follow @WesBos</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div>
+        <h1> Theres is no formation whitout repetion</h1>
+        <video
+            src="https://player.vimeo.com/external/194837783.hd.mp4?s=0ae0319c2cbb5240dc33f2a49325c63f2751dc96&profile_id=119" />
+        <p> So, you've done a few courses and read a few books but still don't feel great about your relationship
+            with JavaScript.
+
+            How do you get better?
+
+            Build things. Lots of things. Build 1,000 things. Keep it up and don't stop. Seriously.
+
+            This has always been my advice. Just put in the work and you will get better.
+
+            But Wes, what should I build? I have no ideas! Please don't make me do another todo app.
+
+            Ideas, Eh? I've got lots! This is JavaScript30 — let's build 30 things together.
+        <p>
+    </div>
+    <section>
+        <div>
+            <h3> WHO IS THIS FOR? </h3>
+            <p> Beginner to Intermediate developers and designers who want to become comfortable with both JavaScript
+                fundamentals and working in the DOM without a library
+                You should already know some JavaScript to start - This isn't a JavaScript 101 course. If you are new to
+                JavaScript, or want to just get comfortable with the fundamentals, I'd recommend you take my
+                BeginnerJavaScript.com course - use the code JAVASCRIPT30 for an extra $10 off.
+                We learn by application - encountering many new situations while talking about the hows, the whys and
+                the whats that we use to solve them.
+                We steer clear of opinionated design patterns, frameworks, libraries and any type of abstraction. These
+                things are great and often needed, but can obstruct learning and constrain initial understanding.
+                These tutorials rely heavily upon browser APIs, most of which involve interaction with the page. If you
+                are stuck in console.log() land, these videos are your next step. Oh, the stuff we build is really fun!
+            </p>
+            <p>
+                <em>You should already know some JavaScript to start</em>
+                - This isn't a JavaScript 101 course. If you are new to JavaScript, or want to just get comfortable with
+                the fundamentals, I'd recommend you take my
+
+                <a href="https://BeginnerJavaScript.com">BeginnerJavaScript.com</a>
+
+                course - use the code
+
+                <strong> JAVASCRIPT30 </strong>
+
+                for an extra $10 off.
+            </p>
+            <p>
+                We learn by application - encountering many new situations while talking about the hows, the whys and
+                the whats that we use to solve them.
+            </p>
+            <p>
+                We steer clear of opinionated design patterns, frameworks, libraries and any type of abstraction. These
+                things are great and often needed, but can obstruct learning and constrain initial understanding.
+            </p>
+            <p>
+                These tutorials rely heavily upon browser APIs, most of which involve interaction with the page. If you
+                are stuck in
+                <code>console.log()</code>
+                land, these videos are your next step. Oh, the stuff we build is really fun!
+            </p>
+    </section>
+    <div>
+        <h3> WES, HOW IS THIS FREE ? </h3>
+        <p>These videos are free as a thank-you to everyone who has supported my premium courses as well as because I
+            believe in giving back to the community. I see a huge need for these videos and I really think it will help
+            many of you become comfortable creating with JavaScript.
+
+            While I've spent over 300 hours on JavaScript30, enough people find they really click with my teaching style
+            and continue their learning with one of my <a href="http://wesbos.com/courses">premium courses</a> . It all
+            works out!
+        </p>
+        <p>
+            <em>
+
+                <a href="https://BeginnerJavaScript.com">BeginnerJavaScript.com</a>
+
+                course - use the code
+
+                <strong> JAVASC
+        </p>
+
+    </div>
+    <div>
+        <h3>HEY, I'M WES BOS</h3>
+        <img src="https://javascript30.com/images/square-small.jpg" alt="Imagem do Wes">
+        <p>
+            Wes Bos is a Full Stack Developer, Speaker and Teacher from Canada. He is a course creator, works as an
+            independent web developer and is the co-host of
+            <a href="https://syntax.fm/">Syntax</a>
+            - a popular web development podcast. Wes has taught over 500 students in 200+ classes and spoken at dozens
+            of conferences around the world. Wes wrote his own bio in the third person for some reason.
+        </p>
+        <p>
+            - a popular web development podcast. Wes has taught over 500 students in 200+ classes and spoken at dozens
+            of conferences around the world. Wes wrote his own bio in the third person for some reason.
+            <a target="_blank" href="https://ReactForBeginners.com">React For Beginners</a>
+            ,
+            <a target="_blank" href="https://AdvancedReact.com">Advanced React and GraphQL</a>
+            ,
+            <a target="_blank" href="https://ES6.io">ES6 for Everyone</a>
+            and
+            <a target="_blank" href="http://LearnNode.com">Learn Node</a>
+            which together have sold over 55,000 copies. He is also the author of
+            <a target="_blank" href="http://JavaScript30.com">JavaScript30.com</a>
+            ,
+            <a target="_blank" href="http://CSSGrid.io">CSSGrid.io</a>
+            ,
+            <a target="_blank" href="http://flexbox.io">Flexbox.io</a>
+            and
+            <a target="_blank" href="http://CommandLinePowerUser.com">Command Line Power User</a>
+            , a set of free video series. 300,000 people have taken at least one of Wes' free video courses.
+        </P>
+    </div>
+
+    <div class="section__inner"></div> ==$0
+    <h2 class="title title__center">30 Days<span class="hl">×</span>30 Videos</h2>
+    <div class="captions">
+        <p><strong>Accessible and ESL friendly!</strong> Closed Captions are provided for every video. Captions done by
+            <a href="https://www.speechpad.com/?affiliate_id=58">Speechpad</a>.
+        </p>
+    </div>
+
+    </div>
+    <section>
+        <div>
+            <div>
+                <h2>FAQ</h2>
+                <div>
+                    <h3>What font / color scheme / editor / terminal is that?</h3>
+                    <p>I answer everything over at wesbos.com/uses. Feel free to tweet me any more questions!</p>
+                </div>
+                <di </div>
+            </div>
+    </section>
+    >
+</body>
+
+</html>
